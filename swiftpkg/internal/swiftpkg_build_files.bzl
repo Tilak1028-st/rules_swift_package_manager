@@ -106,7 +106,7 @@ def _swift_target_build_file(pkg_ctx, target):
         # SPM directive instructing the code to build as if a Swift package.
         # https://github.com/apple/swift-package-manager/blob/main/Documentation/Usage.md#packaging-legacy-code
         "-DSWIFT_PACKAGE",
-        # SPM directive instructing the code to build as if a Swift package for any clang modules.
+        # Define the SPM directive through all C compiler invocations
         "-Xcc",
         "-DSWIFT_PACKAGE",
     ]
